@@ -1,7 +1,7 @@
 package if_else;
 import java.util.*;
 
-public class TraingleType {
+public class TriangleType {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter first side: ");
