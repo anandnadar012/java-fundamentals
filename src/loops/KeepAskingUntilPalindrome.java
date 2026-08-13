@@ -6,13 +6,15 @@ public class KeepAskingUntilPalindrome {
         Scanner sc = new Scanner(System.in);
         int num;
 
+        int original;
+        int reversed;
         do {
             System.out.print("Enter a number: ");
             num = sc.nextInt();
 
-            int original = num;
+             original = num;
             int temp = num;
-            int reversed = 0;
+             reversed = 0;
 
             while (temp != 0) {
                 int digit = temp % 10;
@@ -26,8 +28,8 @@ public class KeepAskingUntilPalindrome {
                 System.out.println(original + " is NOT a palindrome. Try again.");
             }
 
-        } while (true);
+        } while (original != reversed);
 
-        // sc.close();
+        sc.close();
     }
 }
